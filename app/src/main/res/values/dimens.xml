@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="no_internet_bar_height">30dp</dimen>
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="text_size">16sp</dimen>
+</resources>
