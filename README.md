@@ -17,5 +17,5 @@ Set your Syncano account key and instance name in `app/gradle.properties` file i
 
 Offline feature
 ---------------
-Code related to offline feature is in `MessagesIO.java` file.
+Code related to offline feature is in [MessagesIO.java](https://github.com/stasheq/syncano-offline-example/blob/master/app/src/main/java/com/syncano/offlinesample/MessagesIO.java) file.
 Check code and comments inside of this file to get more information.
