@@ -69,7 +69,8 @@ public class MessagesActivity extends NoConnectionActivity implements View.OnCli
     }
 
     private void scrollListToLastPosition() {
-        recycler.smoothScrollToPosition(adapter.getItemCount() - 1);
+        if (adapter.getItemCount() >= 1)
+            recycler.smoothScrollToPosition(adapter.getItemCount() - 1);
     }
 
     /*

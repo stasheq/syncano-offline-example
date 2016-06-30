@@ -13,7 +13,16 @@ Create a "messages" class on your Syncano instance, with one item in schema: typ
 curl -X "POST" "https://api.syncano.io/v1.1/instances/<INSTANCE>/classes/" -H "X-API-KEY: <ACCOUNT_KEY>" -H "Content-Type: application/json" -d '{"name":"messages","schema":[{"type":"text","name":"text"}]}'
 ```
 
+Create a channel "messages_changes" on your Syncano instance, for realtime informing about new messages.
+```bash
+curl -X "POST" "https://api.syncano.io/v1.1/instances/<INSTANCE>/channels/" -H "X-API-KEY: <ACCOUNT_KEY>" -H "Content-type: application/json"  -d '{"name":"messages_changes","custom_publish":false,"type":"default"}'
+```
+
 Set your Syncano account key and instance name in `app/gradle.properties` file in applications source code.
+```
+syncano_api_key=""
+syncano_instance=""
+```
 
 Offline feature
 ---------------
